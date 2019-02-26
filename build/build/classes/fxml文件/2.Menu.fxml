@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_Controller.orderController">
+   <children>
+      <Pane layoutX="88.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="752.0" style="-fx-background-color: #e1f5fe;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView fx:id="orderTable" layoutX="5.0" layoutY="51.0" prefHeight="392.0" prefWidth="502.0" style="-fx-background-color: #b3e5fc;">
+               <columns>
+                  <TableColumn fx:id="number" prefWidth="55.0" text="菜号" />
+                  <TableColumn fx:id="image" prefWidth="63.0" text="菜名" />
+                  <TableColumn fx:id="name" prefWidth="66.0" text="菜名" />
+                  <TableColumn fx:id="price" prefWidth="85.0" text="价格(元)" />
+                  <TableColumn fx:id="type" prefWidth="54.0" text="菜类" />
+                  <TableColumn fx:id="introduce" prefWidth="102.0" text="简介" />
+                  <TableColumn fx:id="num" prefWidth="76.0" text="销量" />
+               </columns>
+            </TableView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="8.0" prefHeight="39.0" prefWidth="106.0" text="菜单详情" textFill="#7e963e">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="468.0" text="数量" />
+            <TextField fx:id="number1" alignment="CENTER" layoutX="149.0" layoutY="463.0" prefHeight="23.0" prefWidth="48.0" promptText="1" style="-fx-background-color: white;" text="1" />
+            <Button layoutX="251.0" layoutY="465.0" mnemonicParsing="false" onAction="#doShop" prefHeight="23.0" prefWidth="76.0" style="-fx-background-color: #b3e5fc;" text="加入购物车">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#44b222" />
+               </effect>
+            </Button>
+            <Text layoutX="586.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="购物车" textAlignment="CENTER" wrappingWidth="68.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="605.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="总金额：" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#81d46342" height="23.0" layoutX="652.0" layoutY="460.0" stroke="#fb0707" strokeType="INSIDE" width="76.0" />
+            <TableView fx:id="shopTable" layoutX="507.0" layoutY="51.0" prefHeight="392.0" prefWidth="226.0">
+               <columns>
+                  <TableColumn fx:id="nameOfFood" prefWidth="73.0" text="菜名" />
+                  <TableColumn fx:id="amountOfFood" prefWidth="79.0" text="数量" />
+                  <TableColumn fx:id="priceOfShop" prefWidth="73.0" text="价格" />
+               </columns>
+            </TableView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#87bbeb" height="59.0" layoutX="281.0" layoutY="515.0" stroke="BLACK" strokeType="INSIDE" width="151.0" />
+            <Button layoutX="287.0" layoutY="521.0" mnemonicParsing="false" onAction="#orpayOfTable" prefHeight="40.0" prefWidth="139.0" text="付款" textFill="#b22828">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Circle fill="DODGERBLUE" layoutX="221.0" layoutY="29.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="numberOfTable" alignment="CENTER" contentDisplay="CENTER" layoutX="191.0" layoutY="17.0" prefHeight="15.0" prefWidth="59.0" text="0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalOfTable" alignment="CENTER" contentDisplay="CENTER" layoutX="657.0" layoutY="464.0" prefHeight="15.0" prefWidth="59.0" text="0.0" textAlignment="CENTER" />
+            <Button layoutX="525.0" layoutY="461.0" mnemonicParsing="false" onAction="#delete" prefHeight="15.0" prefWidth="59.0" style="-fx-background-color: #b3e5fc;" text="删除">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#44b222" />
+               </effect>
+            </Button>
+            <Button layoutX="110.0" layoutY="462.0" mnemonicParsing="false" onAction="#reduce" prefHeight="15.0" prefWidth="31.0" style="-fx-background-color: #b3e5fc;" text="-">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#44b222" />
+               </effect>
+            </Button>
+            <Button layoutX="206.0" layoutY="464.0" mnemonicParsing="false" onAction="#add" prefHeight="15.0" prefWidth="31.0" style="-fx-background-color: #b3e5fc;" text="+">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#44b222" />
+               </effect>
+            </Button>
+            <Button layoutX="634.0" layoutY="503.0" mnemonicParsing="false" onAction="#okOrder" text="确认下单" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

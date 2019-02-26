@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="510.0" prefWidth="685.0" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_Controller.Scene_1controller">
+   <children>
+      <ImageView fitHeight="516.0" fitWidth="749.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/背景1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#141414" height="516.0" layoutY="-3.0" opacity="0.57" stroke="BLACK" strokeType="INSIDE" width="731.0" />
+      <Hyperlink layoutX="576.0" layoutY="467.0" onAction="#systemAdim" text="&gt;&gt;管理员入口" textFill="WHITE" />
+      <Button fx:id="button_0" layoutX="321.0" layoutY="388.0" onAction="#manu" prefHeight="39.0" prefWidth="69.0" style="-fx-background-image:url('/images/logo2.png'); -fx-background-size: 350px;" stylesheets="@../css文件/application.css" text="点菜">
+      </Button>
+      <ImageView fitHeight="385.0" fitWidth="396.0" layoutX="165.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

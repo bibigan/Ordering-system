@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="510.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_Controller.Condition_controller">
+   <children>
+      <ImageView fitHeight="531.0" fitWidth="742.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/背景1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#233536cc" height="470.0" layoutX="64.0" layoutY="20.0" opacity="0.79" stroke="#9069258f" strokeType="INSIDE" width="564.0" />
+      <TextField fx:id="textshuru" layoutX="207.0" layoutY="63.0" prefHeight="36.0" prefWidth="231.0" promptText="输入桌号" />
+      <Button fx:id="find" layoutX="462.0" layoutY="63.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="80.0" stylesheets="@../css文件/application.css" text="搜索">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="144.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="桌号">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="144.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="菜品">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="96.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="支付情况">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="contents" layoutX="205.0" layoutY="194.0" prefHeight="156.0" prefWidth="343.0" />
+      <TextField fx:id="number" layoutX="205.0" layoutY="142.0" prefHeight="36.0" prefWidth="58.0" />
+      <TextField fx:id="pay" layoutX="203.0" layoutY="366.0" prefHeight="36.0" prefWidth="80.0" />
+      <Button fx:id="ok" layoutX="474.0" layoutY="402.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="73.0" stylesheets="@../css文件/application.css" text="确认">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

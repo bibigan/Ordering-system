@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="568.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_Controller.PayController">
+   <children>
+      <Pane prefHeight="568.0" prefWidth="459.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="429.0" fitWidth="339.0" layoutX="77.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/微信图片_20181120225807.jpg" />
+               </image></ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="7.0" prefHeight="62.0" prefWidth="188.0" text="您的总消费金额/元" textFill="#eb3e3e">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="35.0" layoutX="172.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="111.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f52d70" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <Label fx:id="total" alignment="CENTER" layoutX="168.0" layoutY="56.0" prefHeight="35.0" prefWidth="111.0" text="total">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Text layoutX="129.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="请扫描下方二维码付款" textAlignment="CENTER" wrappingWidth="202.240234375" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

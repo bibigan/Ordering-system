@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="474.0" prefWidth="644.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_Controller.TableOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="10.0" layoutY="9.0" prefHeight="474.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="table" layoutX="-30.0" layoutY="165.0" prefHeight="472.0" prefWidth="188.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="firstColumn" prefWidth="96.0" text="桌号" />
+                      <TableColumn fx:id="lastColumn" prefWidth="91.0" text="是否空桌" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="431.0">
+               <children>
+                  <Pane layoutX="31.0" prefHeight="472.0" prefWidth="448.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#75e1ff" height="36.0" layoutX="39.0" layoutY="9.0" stroke="WHITE" strokeType="INSIDE" width="68.0" />
+                        <Label fx:id="orempty" alignment="CENTER" contentDisplay="CENTER" layoutX="42.0" layoutY="7.0" prefHeight="36.0" prefWidth="61.0" text="empty">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#ff000092" layoutX="73.0" layoutY="77.0" radius="27.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#5add4c" layoutX="72.0" layoutY="327.0" radius="27.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Label layoutX="58.0" layoutY="62.0" prefHeight="28.0" prefWidth="40.0" text="桌号" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#1f93ffd4" layoutX="73.0" layoutY="394.0" radius="27.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Label layoutX="58.0" layoutY="315.0" prefHeight="20.0" prefWidth="30.0" text="总价" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="374.0" text="支付" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="392.0" text="情况" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="6.0" layoutY="131.0" prefHeight="128.0" prefWidth="144.0">
+                           <children>
+                              <Circle fill="#ff9d0099" layoutX="64.0" layoutY="78.0" radius="41.0" stroke="WHITE" strokeType="INSIDE" />
+                              <Label layoutX="46.0" layoutY="77.0" text="详情" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="46.0" layoutY="51.0" prefHeight="28.0" prefWidth="40.0" text="点餐" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <TextField fx:id="number" layoutX="117.0" layoutY="60.0" prefHeight="28.0" prefWidth="309.0" />
+                        <TextField fx:id="total" layoutX="117.0" layoutY="307.0" prefHeight="35.0" prefWidth="309.0" />
+                        <TextField fx:id="orpay" layoutX="117.0" layoutY="377.0" prefHeight="36.0" prefWidth="194.0" />
+                        <HBox layoutX="240.0" layoutY="433.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handleDeleteTable" prefHeight="23.0" prefWidth="55.0" text="删除" />
+                              <Button layoutX="181.0" layoutY="376.0" mnemonicParsing="false" onAction="#handleNewTable" prefHeight="23.0" prefWidth="53.0" text="增加" />
+                              <Button mnemonicParsing="false" onAction="#handlerefreshTable" prefHeight="23.0" prefWidth="50.0" text="刷新" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="but_payYes" layoutX="331.0" layoutY="376.0" mnemonicParsing="false" onAction="#okPay" text="确认支付" />
+                     </children>
+                  </Pane>
+                  <TableView fx:id="shopTable" layoutX="124.0" layoutY="114.0" prefHeight="183.0" prefWidth="309.0">
+                     <columns>
+                        <TableColumn fx:id="name" prefWidth="107.0" text="菜名" />
+                        <TableColumn fx:id="amount" prefWidth="98.0" text="数量" />
+                        <TableColumn fx:id="price" prefWidth="103.0" text="价格" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

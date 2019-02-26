@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="484.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_Controller.Scene_0Controller">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="685.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/背景1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="484.0" opacity="0.46" stroke="BLACK" strokeType="INSIDE" width="685.0" />
+      <Text fill="WHITE" layoutX="175.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="请输入当前桌号">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tableNumber" layoutX="208.0" layoutY="198.0" prefHeight="52.0" prefWidth="270.0" promptText="当前桌号" />
+      <Button fx:id="but_yes" layoutX="277.0" layoutY="277.0" mnemonicParsing="false" onAction="#f" prefHeight="52.0" prefWidth="131.0" stylesheets="@../css文件/application.css" text="确认" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

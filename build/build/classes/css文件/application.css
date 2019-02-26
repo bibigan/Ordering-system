@@ -1,0 +1,89 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#button_0{
+	-fx-background-color: linear-gradient(to right,#00fffc,#fff600);
+	-fx-background-radius: 20;  
+    -fx-border-radius: 20;
+}
+#button_0:hover{
+    -fx-background-color: white;
+}
+ 
+#button_0:pressed{
+    -fx-background-color: black;
+} 
+#but_login{
+	-fx-background-color:#90EE90;
+	-fx-background-radius: 20;  
+    -fx-border-radius: 20;
+}
+#ok{
+	-fx-background-color: SkyBlue;
+}
+#ok:hover{
+    -fx-background-color: #00CED1;
+}
+#ok:pressed{
+    -fx-background-color: #008B8B;
+}
+#but_login:hover{
+    -fx-background-color: #43CD80;
+}
+#but_login:pressed{
+    -fx-background-color: #218868;
+}
+#but_condition{
+	-fx-background-color:#DDA0DD;
+}
+#but_condition:hover{
+	-fx-background-color:#CD69C9;
+}
+#but_condition:pressed{
+	-fx-background-color:#9A32CD;
+}
+#but_hot{
+	-fx-background-color:#87CEFF;
+}
+#but_hot:hover{
+	-fx-background-color:#4F94CD;
+}
+#but_hot:pressed{
+	-fx-background-color:#4A708B;
+}
+#but_change{
+	-fx-background-color:#FAEBD7;
+}
+#but_change:hover{
+	-fx-background-color:#EECBAD;
+}
+#but_change:pressed{
+	-fx-background-color:#CDAF95;
+}
+#but_sell{
+	-fx-background-color:#FFF68F;
+}
+#but_sell:hover{
+	-fx-background-color:#EEEE00;
+}
+#but_sell:pressed{
+	-fx-background-color:#FFB90F;
+}
+#find{
+	-fx-background-color:#90EE90;
+}
+#find:hover{
+	-fx-background-color: #43CD80;
+}
+#find:pressed{
+	-fx-background-color: #218868;
+}
+#but_yes{
+		-fx-background-color:#90EE90;
+	-fx-background-radius: 20;  
+    -fx-border-radius: 20;
+}
+#but_yes:hover{
+	-fx-background-color: #43CD80;
+}
+#but_yes:pressed{
+	-fx-background-color: #218868;
+}
