@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="304.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application_Controller.TableEditDialogController">
+   <children>
+      <ImageView fitHeight="331.0" fitWidth="400.0" layoutX="-2.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/0122635a226473a801216e8d26b738.jpg@1280w_1l_2o_100sh.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="ok" alignment="CENTER" layoutX="36.0" layoutY="79.0" prefHeight="77.0" prefWidth="337.0" text="确认顾客已支付吗？" textFill="#748a2d">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="but_finish" layoutX="103.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="36.0" prefWidth="66.0" text="是的">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="but_tablecancel" layoutX="231.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="36.0" prefWidth="66.0" text="取消">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
